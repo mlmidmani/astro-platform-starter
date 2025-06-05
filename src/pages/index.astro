@@ -1,21 +1,132 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ContextAlert from '../components/ContextAlert.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
 ---
 
-<Layout title="Welcome to Astro.">
-    <ContextAlert class="mb-8" />
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
-</Layout>
+<html>
+    <head>
+        <script type="text/javascript">
+            var _iub = _iub || [];
+            _iub.csConfiguration = { siteId: 4022152, cookiePolicyId: 49680546, lang: 'en', storage: { useSiteId: true } };
+        </script>
+        <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4022152.js"></script>
+        <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/stub-v2.js"></script>
+        <script type="text/javascript" src="//cdn.iubenda.com/cs/tcf/safe-tcf-v2.js"></script>
+        <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+        <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+        <title>Crescent Moon Soft</title>
+        <style>
+            .apps-container {
+                display: flex;
+                gap: 2rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .app-card {
+                border: 1px solid #eee;
+                border-radius: 12px;
+                padding: 1.5rem;
+                width: 320px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #fff;
+            }
+            .app-image {
+                width: 100%;
+                max-width: 200px;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                object-fit: contain;
+                border-radius: 20px;
+                margin-bottom: 1rem;
+                transition: transform 0.2s;
+                display: block;
+            }
+            .app-image:hover {
+                transform: scale(1.08);
+            }
+            .badges {
+                margin-top: 1rem;
+                display: flex;
+                gap: 1rem;
+            }
+            .badge {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0.6em 1.6em;
+                border-radius: 12px;
+                font-size: 1.2em;
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+                transition:
+                    background 0.2s,
+                    transform 0.2s;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            }
+            .badge.ios {
+                background: #007aff;
+            }
+            .badge.android {
+                background: #3ddc84;
+            }
+            .badge:hover {
+                transform: scale(1.08);
+                filter: brightness(0.95);
+            }
+        </style>
+    </head>
+    <body>
+        <Layout title="Crescent Moon Soft">
+            <header>
+                <h1>Welcome to Crescent Moon Soft</h1>
+                <p>Innovative mobile apps for your spiritual journey.</p>
+            </header>
+            <section>
+                <h2>Our Apps</h2>
+                <div class="apps-container">
+                    <!-- Sira Journey (iOS & Android) -->
+                    <div class="app-card">
+                        <img class="app-image" src="/icons/sira-journey.png" alt="Sira Journey App Icon" />
+                        <h3>Sira Journey</h3>
+                        <p>
+                            Embark on an interactive journey through the life of Prophet Muhammad (PBUH). Explore key events, stories, and lessons in an
+                            engaging and educational way.
+                        </p>
+                        <div class="badges">
+                            <a class="badge ios" href="https://apps.apple.com/us/app/sira-journey/id6746103609" target="_blank" rel="noopener">iOS</a>
+                            <a
+                                class="badge android"
+                                href="https://play.google.com/store/apps/details?id=com.moonsoft.sira_journey"
+                                target="_blank"
+                                rel="noopener">Android</a
+                            >
+                        </div>
+                    </div>
+                    <!-- Topics of Quran (iOS) -->
+                    <div class="app-card">
+                        <img class="app-image" src="/icons/topics-of-quran.png" alt="Topics of Quran App Icon" />
+                        <h3>Topics of Quran</h3>
+                        <p>
+                            Discover the Quran by topic. Easily find verses related to hundreds of subjects, making your study and reflection more focused and
+                            meaningful.
+                        </p>
+                        <div class="badges">
+                            <a class="badge ios" href="https://apps.apple.com/us/app/topics-of-quran/id1475109567" target="_blank" rel="noopener">iOS</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="margin-top: 2.5rem; text-align: center;">
+                <h2>Contact</h2>
+                <p>
+                    <a href="mailto:crescent.moon.soft@gmail.com" style="font-size:1.1em; color:#007aff; text-decoration:underline; font-weight:500;">
+                        Contact Developer
+                    </a>
+                </p>
+            </section>
+        </Layout>
+    </body>
+</html>
